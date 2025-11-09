@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品展示</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 圖片展示專用樣式 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* 讓圖片自動裁切填滿方框 */
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header><h1>我的作品展示</h1></header>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我</a>
+    <a href="portfolio.html">作品展示</a>
+    <a href="map.html">地圖</a>
+    <a href="contact.html">聯絡我</a>
+  </nav>
+
+  <main>
+    <h2>近期作品</h2>
+    <p>以下是我近期作品集：</p>
+
+    <div class="gallery">
+      <img src="images/星際效應 draw.jpg" alt="1">
+      <img src="images/驚聲尖叫2.jpg" alt="2">
+      <img src="images/5.png" alt="3">
+      <img src="images/黑白.jpg" alt="4">
+      <img src="images/boat draw.jpg" alt="5">
+    </div>
+  </main>
+
+</body>
+</html>
